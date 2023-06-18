@@ -12,6 +12,7 @@ const backpack = {
   volume: 30,
   color: "grey",
   pocketNum: 15,
+  usablePockets: 0,
   strapLength: {
     left: 26,
     right: 26,
@@ -22,5 +23,8 @@ const backpack = {
   newStrapLength: function (lengthLeft, lengthRight) {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
+  },
+  setUsablePockets: function (pocketNum) {
+    this.usablePockets = pocketNum;
   },
 };
